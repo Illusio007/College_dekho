@@ -1,0 +1,97 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: blanchedalmond;
+}
+
+/*...............section heading...........*/
+.section-heading{
+    color: var(--bs-indigo);
+}
+
+/*...............Deparment Names...........*/
+.section-heading2{
+    color: var(--bs-purple);
+}
+
+/*..................header.................*/
+@media(max-width: 468px){
+    .header-social-icon{
+        display: none;
+    }
+}
+
+/*...................NAVBAR...............*/
+nav{
+    background: #fff!important;
+    box-shadow: 2px 2px 4px  #4444;
+}
+nav .navbar-brand{
+    color:var(--bs-teal);
+}
+.navbar-brand .nav-link{
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+ .navbar-toggler{ 
+    outline: none!important;
+     padding: none!important;
+     color: #edc8f6;
+}
+/*............CAROUSEL.................*/
+.carousel-inner .carousel-item{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.carousel-inner .carousel-item::before{
+    content: '';
+    background-color: rgba(12, 11, 10, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.carousel-inner .carousel-caption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 35%;
+    left: 0;
+    right: 0;
+}
+.carousel-inner .carousel-caption h2{
+    color: rgb(157, 241, 232);
+    margin-bottom: 7px;
+    font-size: 58px;
+    width: 80%;
+    margin: 0px auto 30px auto;
+    font-weight: bold;
+
+}
+.carousel-inner .carousel-caption p{
+    color: #edc8f6;
+    font-size: 20px;
+    width: 80%;
+    margin: 0px auto 20px auto;
+
+}
+@media(max-width: 768px){
+    .carousel-inner .carousel-caption h2{
+       font-size: 38px; 
+    }
+}   
+@media(max-width: 577px){
+    .carousel-inner .carousel-caption h2{
+       font-size: 25px; 
+    }
+    .carousel-inner .carousel-caption p{
+        font-size: 13px; 
+     }
+} 
+
